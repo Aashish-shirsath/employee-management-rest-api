@@ -28,6 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public String deleteEmployeeFunctionality(long employeeId) {
+        System.out.println("test");
         employeeRepository.deleteById(employeeId);
         return "Delete";
     }

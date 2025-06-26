@@ -21,6 +21,7 @@ public class EmployeeController {
 
     @GetMapping("{employeeId}")
     public Employee viewByEmployeeId(@PathVariable long employeeId){
+        System.out.println("test");
         return employeeService.viewByEmployeeId(employeeId);
     }
 
